@@ -1,3 +1,8 @@
+# RewriteEngine On
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)$ index.php/$1 [L]
+
 <IfModule authz_core_module>
     RewriteEngine On
     RewriteCond %{REQUEST_URI} ^system.*
@@ -26,11 +31,3 @@
     # /directory browsing
     Options All -Indexes
 </IfModule>
-
-
-# <IfModule authz_core_module>
-#     Require all denied
-# </IfModule>
-# <IfModule !authz_core_module>
-#     Deny from all
-# </IfModule>
