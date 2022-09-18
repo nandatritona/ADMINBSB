@@ -539,6 +539,6 @@ $config['rewrite_short_tags'] = FALSE;
 */
 $config['proxy_ips']    = '';
 $config['namaApp']      = 'ADMIN-BSB';
-$config['Authour']      = 'Nanda Tritona';
-$config['AuthourEmail'] = 'nandhafebrian3@gmail.com';
+$config['Author']       = 'Nanda Tritona';
+$config['AuthorEmail']  = 'nandhafebrian3@gmail.com';
 $config['myGithub']     = 'https://github.com/nandatritona';
