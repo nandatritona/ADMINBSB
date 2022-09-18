@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Tbl_jabatan extends CI_Controller {
+class Tbl_position extends CI_Controller {
 
     public function __construct() {
 		/**
@@ -10,14 +10,15 @@ class Tbl_jabatan extends CI_Controller {
 		 */
 		// ini_set('display_errors', 'off');
 		parent::__construct();
+		$this->load->model('M_position');
 	}
 
     public function index()
     {
-        $data['_view'] = "tbl_jabatan/index";
+        $data['_view'] = "tbl_position/index";
 		$this->load->view("layout/main_admin", $data);
     }
 
 }
 
-/* End of file Tbl_jabatan.php */
+/* End of file Tbl_position.php */
